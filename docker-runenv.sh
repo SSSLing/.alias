@@ -6,7 +6,7 @@ if [ $(docker ps -a -f name=$ContainerName | grep -c $ContainerName) = 0 ]; then
     -h $ContainerName \
     -e DISPLAY \
     -e QT_X11_MITSHM=1 \
-    -v /tmp/.X11-unix/X$DisplayNum:/tmp/.X11-unix/X$DisplayNum:rw \
+    -v /tmp/.X11-unix/X$DisplayNum:/tmp/.X11-unix/X$DisplayNum \
     -v $HOME/code/HorizonAD:/root \
     -w /root \
     $ExtrarParam \

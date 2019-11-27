@@ -1,3 +1,7 @@
+if [ -z $CodeDir ]; then
+    export CodeDir=$HOME
+fi
+alias rs="source $HOME/.zshrc"
 alias st="source $HOME/.alias/st.sh"
 alias cm="source $HOME/.alias/cm.sh"
 alias red="export ContainerName=\"red\" && export ExtrarParam=\"-p=8893:8888\" && source $HOME/.alias/docker-runenv.sh"

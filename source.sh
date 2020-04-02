@@ -13,5 +13,5 @@ alias control="cd $CodeDir/code/HorizonAD/catkin_ws/src/control"
 alias common="cd $CodeDir/code/HorizonAD/catkin_ws/src/common"
 alias v2x="cd $CodeDir/code/HorizonAD/catkin_ws/src/v2x"
 
-# alias horizon="source $HOME/.alias/docker-runenv.sh runenv:complete-cuda10.0 horizon $CodeDir"
-alias horizon="source $HOME/.alias/docker-desktop.sh runenv:desktop-complete-cuda9.2 horizon $CodeDir -p=51001:5901"
+alias Lhorizon="source $HOME/.alias/docker-runenv.sh runenv:complete-cuda10.0 lhorizon $CodeDir/code/HorizonAD"
+alias Dhorizon="source $HOME/.alias/docker-desktop.sh runenv:complete-desktop-cuda10.0 dhorizon $CodeDir/code/HorizonAD -p=51001:5901"
